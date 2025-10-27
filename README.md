@@ -56,14 +56,32 @@ cowrie is running (PID: 2759).
 
 The SSH daemon runs on port 22 by default. Cowrie runs on port 2222 by default. To receive most traffic, Cowrie will need to listen on port 22. This requires two changes: First, If you have an existing SSHD on port 22 it will need to be moved to another port. Second, Cowrie will need to listen to requests on port 22.
 
-<img width="948" height="385" alt="image" src="https://github.com/user-attachments/assets/8a72fc19-7fbd-431b-be5c-c3bfdd802637" />
+7. View logs
+tail -f var/log/cowrie/cowrie.log
 
+<img width="937" height="370" alt="image" src="https://github.com/user-attachments/assets/fe707a00-9850-494f-b7e3-4162c7bbc1b9" />
 
+8. On my Kali machine use nmap and hydra towards the honeypot
+```
+nmap -Pn 20.186.92.10 > 
+nc -vz 20.186.92.10 22 > check if port 22 on VM reachable
+hydra -h
+```
+What -Pn does (short)
 
+- Skips the initial host discovery (ping) phase.
 
+- nmap assumes the host is up and proceeds directly to port scanning.
 
+- Useful when ICMP/host discovery is blocked by a firewall/IDS.
 
+When to use -Pn
 
+- The target drops/ignores ICMP, ARP, or discovery probes (common on hardened servers/cloud VMs).
+
+- You see Host seems down results but you know the host is live.
+
+- You're troubleshooting a service behind a firewall that blocks ping.
 
 **References**  
 https://github.com/CommunityHoneyNetwork  
