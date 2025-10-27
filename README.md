@@ -39,6 +39,6 @@ python3 -m pip install -r requirements.txt
 
 
 **References**  
-https://github.com/CommunityHoneyNetwork
-https://stingar.security.duke.edu/
-https://communityhoneynetwork.readthedocs.io/en/stable/
+https://github.com/CommunityHoneyNetwork  
+https://stingar.security.duke.edu/  
+https://communityhoneynetwork.readthedocs.io/en/stable/  
