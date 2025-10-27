@@ -2,7 +2,7 @@
 
 **Overview**
 1. Setup a Azure ubuntu VM
-2. Install Cowrie honeypot
+2. Install Cowrie SSH honeypot
 3. Expose to internet for 24hrs
 4. Collect log data
 5. Harden VM
@@ -21,11 +21,32 @@ Honeypots provide an excellent source of threat intelligence data with a high si
 2. SSH into VM, make new cowrie directory and git clone Cowrie  
 <img width="692" height="234" alt="image" src="https://github.com/user-attachments/assets/3cf68d20-9792-4d29-b037-1cde57858742" />
 
+3. Launch a python virtual env (good practice for running python packages) and activate it
+```
+python3 -m venv cowrie-env
+source cowrie-env/bin/activate
+```
 
+5. Install python requirements
+```
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
+6. Copy and edit the config
+```
+cp etc/cowrie.cfg.dist etc/cowrie.cfg
+vi etc/cowrie.cfg
+```
 
+7. Setup port forwarding for SSH to Cowrie
+```
+sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2222
+sudo iptables-save
+```
+iptables is a Linux command-line utility that configures the Linux kernel's Netfilter firewall for filtering and manipulating network traffic. It inspects and filters IP packets using tables, which contain chains of rules that can accept, reject, or drop packets based on conditions like IP address, protocol, and port.  
 
-
+8. 
 
 
 
