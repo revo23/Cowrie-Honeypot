@@ -1,11 +1,12 @@
 # STINGAR-Honeypot
 
 **Overview**
-1. Setup a VM Honeypot
-2. Expose to internet for 24hrs
-3. Collect log data
-4. Harden VM
-5. Assess controls
+1. Setup a Azure ubuntu VM
+2. Install CommunityHoneyNetwork server then Cowrie honeypot
+3. Expose to internet for 24hrs
+4. Collect log data
+5. Harden VM
+6. Assess controls
 
 **Situation**
 Vendor Cyber Threat Intelligence (CTI) often faces issues such as a lack of relevance and context—feeds are frequently too generic and not tailored to an organization’s specific industry, threat landscape, or region. Timeliness is another concern, as intelligence may arrive after adversaries have already evolved their tactics. The large volume of indicators, many of which are outdated or false positives, can overwhelm analysts and create alert fatigue. Additionally, vendors often provide limited transparency about data sources and collection methods, making it hard to assess reliability. Vendor CTI also tends to focus on external threats, offering little insight into internal compromises or organization-specific attacker behavior. Finally, high costs and restrictive licensing models can lead to vendor lock-in, limiting flexibility and collaboration across multiple intelligence sources.
