@@ -17,65 +17,41 @@ Honeypots provide an excellent source of threat intelligence data with a high si
 Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log brute force attacks and the shell interaction performed by the attacker. In medium interaction mode (shell) it emulates a UNIX system in Python, in high interaction mode (proxy) it functions as an SSH and telnet proxy to observe attacker behavior to another system.  
 
 **Steps**
-1. Deploy Ubuntu Azure VM  
-<img width="1601" height="856" alt="image" src="https://github.com/user-attachments/assets/77fd09d1-ab7f-4ad5-bc56-30b9413604cf" />
+1. Deploy Debian Azure VM  
+<img width="1805" height="918" alt="image" src="https://github.com/user-attachments/assets/809ee3f1-d701-401c-984a-b751ab603b7f" />
 
-2. SSH into VM, make new cowrie directory and git clone Cowrie  
-<img width="692" height="234" alt="image" src="https://github.com/user-attachments/assets/3cf68d20-9792-4d29-b037-1cde57858742" />
 
-3. Launch a python virtual env (good practice for running python packages) and activate it
+2. SSH into VM and create user account cowrie 
 ```
-sudo apt update
-sudo apt install python3.12-venv -y
+sudo adduser --disabled-password cowrie
+
+sudo su - cowrie
+```
+
+It’s strongly recommended to run with a dedicated non-root user id
+
+3. git clone the code
+```
+git clone http://github.com/cowrie/cowrie
+
+cd cowrie
+```
+
+4. Setup virtual env adn install packages
+```
+pwd
 python3 -m venv cowrie-env
 source cowrie-env/bin/activate
-```
-Linux directories are organized in a hierarchical, tree-like structure starting from the root directory, represented by a forward slash (/). Key directories include /bin for essential user binaries, /etc for configuration files, /home for user directories, /var for variable data like log files, /usr for user system resources, and /tmp for temporary files.  
-
-5. Install python requirements
-```
-pip install --upgrade pip
-pip install -r requirements.txt
+(cowrie-env) $ python -m pip install --upgrade pip
+(cowrie-env) $ python -m pip install -e .
 ```
 
-6. Copy and edit the config
-```
-cp etc/cowrie.cfg.dist etc/cowrie.cfg
-vi etc/cowrie.cfg
-```
-
-7. Setup port forwarding for SSH to Cowrie
-```
-sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j REDIRECT --to-port 2222
-sudo iptables-save
-```
-iptables is a Linux command-line utility that configures the Linux kernel's Netfilter firewall for filtering and manipulating network traffic. It inspects and filters IP packets using tables, which contain chains of rules that can accept, reject, or drop packets based on conditions like IP address, protocol, and port.  
-
-8. 
 
 
 
 
 
 
-
-
-
-2. Install docker & docker-compose
-<img width="678" height="518" alt="image" src="https://github.com/user-attachments/assets/7ec45c8e-578a-4862-bbdf-d195458e8d62" />
-Docker Compose is a tool used for defining and running multi-container Docker applications. It allows you to configure your application's services, networks, and volumes in a single YAML file.  
-
-3. Clone repo
-```
-sudo git clone -b v1.9 https://github.com/CommunityHoneyNetwork/chn-quickstart.git /opt/chnserver && sudo chown -R  ubuntu:docker /opt/chnserver
-```
-
-4. installs all Python packages listed in a file called requirements.txt using pip > Use a virtual environment so packages stay isolated from the system
-```
-python3 -m venv venv
-source venv/bin/activate
-python3 -m pip install -r requirements.txt
-```
 
 
 
