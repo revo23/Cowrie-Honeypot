@@ -1,7 +1,7 @@
 # STINGAR-Honeypot
 
 **Overview**
-1. Setup a Azure ubuntu VM
+1. Setup a Azure Debian VM
 2. Install Cowrie SSH honeypot
 3. Expose to internet for 24hrs
 4. Collect log data
@@ -87,8 +87,8 @@ When to use -Pn
 
 <img width="936" height="986" alt="image" src="https://github.com/user-attachments/assets/c36ec0ac-cb33-4e01-b58c-b30f6a99474d" />
 
-
-9. 
+**Result**
+Source IP and bruteforce attampts (user/password) logged
 
 **References**  
 https://github.com/CommunityHoneyNetwork  
