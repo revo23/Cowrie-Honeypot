@@ -85,7 +85,7 @@ When to use -Pn
 
 <img width="936" height="986" alt="image" src="https://github.com/user-attachments/assets/c36ec0ac-cb33-4e01-b58c-b30f6a99474d" />
 
-**Result**
+**Result**  
 Source IP and bruteforce attampts (user/password) logged
 
 **References**  
