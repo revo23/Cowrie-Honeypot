@@ -23,6 +23,8 @@ Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log b
 
 2. SSH into VM and install system dependencies
 ```
+sudo apt-get update
+
 sudo apt-get install git python3-pip python3-venv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind
 ```
 
@@ -36,6 +38,7 @@ cd cowrie
 4. Setup virtual env adn install packages
 ```
 pwd
+/home/stingar/cowrie
 python3 -m venv cowrie-env
 source cowrie-env/bin/activate
 (cowrie-env) $ python -m pip install --upgrade pip
@@ -43,12 +46,13 @@ source cowrie-env/bin/activate
 ```
 5. Start cowrie and check status
 ```
-$ source cowrie-env/bin/activate
+source cowrie-env/bin/activate
 (cowrie-env) $ cowrie start
 (cowrie-env) $ cowrie status
+cowrie is running (PID: 2759).
 ```
 
-6. No scanning seen in logs
+6. Listening on port 22
 
 The SSH daemon runs on port 22 by default. Cowrie runs on port 2222 by default. To receive most traffic, Cowrie will need to listen on port 22. This requires two changes: First, If you have an existing SSHD on port 22 it will need to be moved to another port. Second, Cowrie will need to listen to requests on port 22.
 
