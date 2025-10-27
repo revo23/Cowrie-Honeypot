@@ -25,7 +25,7 @@ Docker Compose is a tool used for defining and running multi-container Docker ap
 3. installs all Python packages listed in a file called requirements.txt using pip > Use a virtual environment so packages stay isolated from the system
 ``python3 -m venv venv
 source venv/bin/activate
-python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt``
 
 
 
