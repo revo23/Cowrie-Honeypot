@@ -1,4 +1,4 @@
-# STINGAR-Honeypot
+# Cowrie-Honeypot
 
 **Overview**
 1. Setup a Azure Debian VM
@@ -91,9 +91,7 @@ When to use -Pn
 Source IP and bruteforce attampts (user/password) logged
 
 **References**  
-https://github.com/CommunityHoneyNetwork  
-https://stingar.security.duke.edu/  
-https://communityhoneynetwork.readthedocs.io/en/stable/  
+ 
 https://github.com/cowrie/cowrie  
 https://www.cowrie.org/  
 https://www.youtube.com/watch?v=uSohtNwQXuI
