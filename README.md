@@ -18,6 +18,13 @@ Honeypots provide an excellent source of threat intelligence data with a high si
 1. Deploy Ubuntu Azure VM
 <img width="1601" height="856" alt="image" src="https://github.com/user-attachments/assets/77fd09d1-ab7f-4ad5-bc56-30b9413604cf" />
 
+2. Install docker & docker-compose
+<img width="678" height="518" alt="image" src="https://github.com/user-attachments/assets/7ec45c8e-578a-4862-bbdf-d195458e8d62" />
+Docker Compose is a tool used for defining and running multi-container Docker applications. It allows you to configure your application's services, networks, and volumes in a single YAML file.  
+
+3. 
+
+
 
 
 **References**  
