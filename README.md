@@ -89,7 +89,7 @@ When to use -Pn
 
 
 **Result**  
-Source IP and bruteforce attampts (user/password) logged
+Source IP and bruteforce attempts (user/password) logged
 
 **References**  
  
