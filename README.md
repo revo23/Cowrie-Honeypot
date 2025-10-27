@@ -119,7 +119,7 @@ RegDate:        2018-10-26
 Updated:        2018-10-26
 Ref:            https://rdap.arin.net/registry/entity/C07203717
 ```
-Blocking depends on it is an actual attack (see interaction and commands) to determine and for a certain time period (e.g. 7 days for stingar) > For Duke's Stingar, extending the block duration beyond 24 hours led to more blocked malicious connections, which aligns with expectations because attackers may take longer than a day to move across networks. The graph shows this improvement clearly.  
+Blocking depends on it is an actual attack (see interaction and commands) to determine and for a certain time period (e.g. 7 days for stingar) > For Duke's Stingar, extending the block duration beyond 24 hours led to more blocked malicious connections, which aligns with expectations because attackers may take longer than a day to move across networks. 
 
 
 
