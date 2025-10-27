@@ -119,7 +119,7 @@ RegDate:        2018-10-26
 Updated:        2018-10-26
 Ref:            https://rdap.arin.net/registry/entity/C07203717
 ```
-Blocking depends on it is an actual attack (see interaction and commands) to determine and for a certain time period (e.g. 7 days for stingar) > For Duke's Stingar, extending the block duration beyond 24 hours led to more blocked malicious connections, which aligns with expectations because attackers may take longer than a day to move across networks. 
+Blocking depends on it being actual malicious attempt (see interaction and commands) and for a certain time period (e.g. 7 days for stingar) > For Duke's Stingar, extending the block duration beyond 24 hours to 4 days around mid-2019 led to more blocked malicious connections, this show if you only block connections for 24 hours, some scanners that return after that period could be making connections still but not reaching the threshold to trigger another block (e.g. pinging or stealthy scans). So it is wise to have a longer block duration not not too long (indefinite).
 
 
 
