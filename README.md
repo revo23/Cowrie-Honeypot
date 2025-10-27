@@ -21,14 +21,10 @@ Cowrie is a medium to high interaction SSH and Telnet honeypot designed to log b
 <img width="1805" height="918" alt="image" src="https://github.com/user-attachments/assets/809ee3f1-d701-401c-984a-b751ab603b7f" />
 
 
-2. SSH into VM and create user account cowrie 
+2. SSH into VM and install system dependencies
 ```
-sudo adduser --disabled-password cowrie
-
-sudo su - cowrie
+sudo apt-get install git python3-pip python3-venv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind
 ```
-
-It’s strongly recommended to run with a dedicated non-root user id
 
 3. git clone the code
 ```
@@ -45,9 +41,18 @@ source cowrie-env/bin/activate
 (cowrie-env) $ python -m pip install --upgrade pip
 (cowrie-env) $ python -m pip install -e .
 ```
+5. Start cowrie and check status
+```
+$ source cowrie-env/bin/activate
+(cowrie-env) $ cowrie start
+(cowrie-env) $ cowrie status
+```
 
+6. No scanning seen in logs
 
+The SSH daemon runs on port 22 by default. Cowrie runs on port 2222 by default. To receive most traffic, Cowrie will need to listen on port 22. This requires two changes: First, If you have an existing SSHD on port 22 it will need to be moved to another port. Second, Cowrie will need to listen to requests on port 22.
 
+<img width="948" height="385" alt="image" src="https://github.com/user-attachments/assets/8a72fc19-7fbd-431b-be5c-c3bfdd802637" />
 
 
 
@@ -62,4 +67,5 @@ https://stingar.security.duke.edu/
 https://communityhoneynetwork.readthedocs.io/en/stable/  
 https://github.com/cowrie/cowrie  
 https://www.cowrie.org/  
+https://www.youtube.com/watch?v=uSohtNwQXuI
 
