@@ -61,11 +61,13 @@ tail -f var/log/cowrie/cowrie.log
 
 <img width="937" height="370" alt="image" src="https://github.com/user-attachments/assets/fe707a00-9850-494f-b7e3-4162c7bbc1b9" />
 
-8. On my Kali machine use nmap and hydra towards the honeypot
+8. On my Kali machine use nmap and password bruteforce towards the honeypot
 ```
-nmap -Pn 20.186.92.10 > 
+nmap -Pn 20.186.92.10 > port scan 
 nc -vz 20.186.92.10 22 > check if port 22 on VM reachable
 hydra -h
+hydra -l stingar -P /usr/share/wordlists/rockyou.txt -t 4 -f ssh://20.186.92.10
+
 ```
 What -Pn does (short)
 
@@ -82,6 +84,11 @@ When to use -Pn
 - You see Host seems down results but you know the host is live.
 
 - You're troubleshooting a service behind a firewall that blocks ping.
+
+- <img width="936" height="986" alt="image" src="https://github.com/user-attachments/assets/c36ec0ac-cb33-4e01-b58c-b30f6a99474d" />
+
+
+9. 
 
 **References**  
 https://github.com/CommunityHoneyNetwork  
