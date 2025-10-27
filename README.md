@@ -26,6 +26,7 @@ Honeypots provide an excellent source of threat intelligence data with a high si
 python3 -m venv cowrie-env
 source cowrie-env/bin/activate
 ```
+Linux directories are organized in a hierarchical, tree-like structure starting from the root directory, represented by a forward slash (/). Key directories include /bin for essential user binaries, /etc for configuration files, /home for user directories, /var for variable data like log files, /usr for user system resources, and /tmp for temporary files.  
 
 5. Install python requirements
 ```
