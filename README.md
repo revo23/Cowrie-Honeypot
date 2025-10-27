@@ -3,7 +3,7 @@
 **Overview**
 1. Setup a Azure Debian VM
 2. Install Cowrie SSH honeypot
-3. Bruteforce using Nmap and Hydra using Kali
+3. Recon using Nmap and bruteforce using Hydra on Kali
 4. View logs
 
 **Situation**  
