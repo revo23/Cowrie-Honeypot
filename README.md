@@ -22,11 +22,14 @@ Honeypots provide an excellent source of threat intelligence data with a high si
 <img width="678" height="518" alt="image" src="https://github.com/user-attachments/assets/7ec45c8e-578a-4862-bbdf-d195458e8d62" />
 Docker Compose is a tool used for defining and running multi-container Docker applications. It allows you to configure your application's services, networks, and volumes in a single YAML file.  
 
-3. 
+3. installs all Python packages listed in a file called requirements.txt using pip > Use a virtual environment so packages stay isolated from the system
+```python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install -r requirements.txt```
 
 
 
 
 **References**  
 https://github.com/CommunityHoneyNetwork
-
+https://stingar.security.duke.edu/
