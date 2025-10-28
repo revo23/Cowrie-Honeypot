@@ -33,7 +33,7 @@ git clone http://github.com/cowrie/cowrie
 cd cowrie
 ```
 
-4. Setup virtual env adn install packages
+4. Setup virtual environment and install packages
 ```
 pwd
 /home/stingar/cowrie
