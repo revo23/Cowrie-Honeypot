@@ -104,13 +104,13 @@ NetHandle:      NET-173-88-0-0-1
 Parent:         NET173 (NET-173-0-0-0-0)
 NetType:        Direct Allocation
 OriginAS:       
-Organization:   Charter Communications Inc (CC-3517) **> The ISP or company that owns this IP range.**
+Organization:   Charter Communications Inc (CC-3517) > The ISP or company that owns this IP range.
 RegDate:        2008-09-05
 Updated:        2008-09-05
 Ref:            https://rdap.arin.net/registry/ip/173.88.0.0
 
 CustName:       SCS
-Address:        605 W CHAPEL HILL ST **> address of actor(me)**
+Address:        605 W CHAPEL HILL ST > address of actor(me)
 City:           DURHAM
 StateProv:      NC
 PostalCode:     27701
