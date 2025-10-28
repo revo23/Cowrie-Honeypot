@@ -89,7 +89,7 @@ When to use -Pn
 
 
 **Result**  
-Source IP and bruteforce attempts (user/password) logged  
+Source IP and bruteforce attempts (user/password) logged  and implement blocking if possible
 
 Whois IP 173.95.50.152  
 - https://www.whois.com/whois/173.95.50.152
@@ -104,13 +104,13 @@ NetHandle:      NET-173-88-0-0-1
 Parent:         NET173 (NET-173-0-0-0-0)
 NetType:        Direct Allocation
 OriginAS:       
-Organization:   Charter Communications Inc (CC-3517) > The ISP or company that owns this IP range.
+Organization:   Charter Communications Inc (CC-3517) **> The ISP or company that owns this IP range.**
 RegDate:        2008-09-05
 Updated:        2008-09-05
 Ref:            https://rdap.arin.net/registry/ip/173.88.0.0
 
 CustName:       SCS
-Address:        605 W CHAPEL HILL ST > address of actor
+Address:        605 W CHAPEL HILL ST **> address of actor(me)**
 City:           DURHAM
 StateProv:      NC
 PostalCode:     27701
@@ -119,8 +119,9 @@ RegDate:        2018-10-26
 Updated:        2018-10-26
 Ref:            https://rdap.arin.net/registry/entity/C07203717
 ```
-Blocking depends on it being actual malicious attempt (see interaction and commands) and for a certain time period (e.g. 7 days for stingar) > For Duke's Stingar, extending the block duration beyond 24 hours to 4 days around mid-2019 led to more blocked malicious connections, this show if you only block connections for 24 hours, some scanners that return after that period could be making connections still but not reaching the threshold to trigger another block (e.g. pinging or stealthy scans). So it is wise to have a longer block duration not not too long (indefinite).
+Blocking depends on it being actual malicious attempt (see interaction and commands) and for a certain time period (e.g. 7 days for stingar) > For Duke's Stingar, extending the block duration beyond 24 hours to 4 days around mid-2019 led to more blocked malicious connections, this show if you only block connections for 24 hours, some scanners that return after that period could be making connections still but not reaching the threshold to trigger another block (e.g. pinging or stealthy scans or login). So it is wise to have a slightly longer block duration not not too long (aka indefinite).
 
+<img width="768" height="535" alt="image" src="https://github.com/user-attachments/assets/2c314e65-a2ae-40ba-84e1-58daccb42740" />
 
 
 **References**  
