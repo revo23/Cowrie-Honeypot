@@ -128,7 +128,7 @@ Blocking depends on it being actual malicious attempt (see interaction and comma
  
 https://github.com/cowrie/cowrie  
 https://www.cowrie.org/  
-https://www.youtube.com/watch?v=uSohtNwQXuI  
+<!-- https://www.youtube.com/watch?v=uSohtNwQXuI  README --> 
 https://stingar.security.duke.edu/  
 https://stingar.security.duke.edu/2019/07/29/how-long-should-you-block/
 
