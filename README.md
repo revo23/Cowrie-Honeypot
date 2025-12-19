@@ -110,7 +110,7 @@ Updated:        2008-09-05
 Ref:            https://rdap.arin.net/registry/ip/173.88.0.0
 
 CustName:       SCS
-Address:        605 W CHAPEL HILL ST > **address of actor(me)**
+Address:        605 W CHAPEL HILL ST > address of actor(me)
 City:           DURHAM
 StateProv:      NC
 PostalCode:     27701
